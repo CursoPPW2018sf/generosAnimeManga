@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	
+	<meta charset="utf-8">
+	<title>GENEROS ANIME/MANGA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+<script type="text/javascript" >
+		
+			
+		
+			
+			
+		</script>
+
+<script type="text/javascript">
+		
+		
+			
+		
+			function inicio() {
+				
+	
+				window.onscroll = function() {fijarmenu();  scrollFunction()};
+	
+				var navbar = document.getElementById("menu");
+				var sticky = navbar.offsetTop;
+				
+				function fijarmenu() 
+				{
+	  				if (window.pageYOffset >= sticky) 
+	  				{
+	    				
+	    				//navbar.classList.add("sticky");
+	    				navbar.style.position = "fixed";
+						navbar.style.top = "0";
+						
+						var ancho = navbar.parentNode.offsetWidth;
+						
+						
+						navbar.style.width = ancho + "px";
+	    				
+	  				} 
+	  				else 
+	  				{
+	    				//navbar.classList.remove("sticky");
+	    				navbar.style.position = "relative";
+	  				}
+				}
+				
+				window.onresize = function () {
+					if (screen.width > 600) {
+			
+			    		var menu = document.getElementById("menu");
+			    		
+			    		menu.className = "";
+			    		
+			    		
+			    		
+			    		var listaMenu = menu.getElementsByTagName("ul")[0];
+			    	
+			    		var elementosMenu = listaMenu.getElementsByTagName("li");
+			    		
+						var icono = elementosMenu[0].getElementsByTagName("a")[0];
+						
+						icono.onclick = function() {abrirMenu();};
+						
+						icono.getElementsByTagName("i")[0].className = "fa fa-bars";
+			    	}
+				}
+				
+				
+		}
+		
+		
+		
+		
+		function scrollFunction() {
+			    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			        document.getElementById("boton1").style.display = "block";
+			    } else {
+			        document.getElementById("boton1").style.display = "none";
+			    }
+			}
+			
+			
+			function subir() {
+			    document.body.scrollTop = 0; 
+			    document.documentElement.scrollTop = 0; 
+			}
+		
+		
+		
+		
+		function abrirMenu() {
+			
+			
+    		var menu = document.getElementById("menu");
+    		
+    		if (menu.className == "") 
+    		{
+    			
+    			var alturaMenu = menu.offsetHeight;
+        		menu.className += "menuAbierto";
+        		
+        		
+    	
+    			var elementosMenu = menu.getElementsByTagName("li");
+    	
+    			var i;
+    			for (i=1; i < elementosMenu.length; i++) 
+    			{
+    				elementosMenu[i].onclick = function() {cerrarMenu();};
+    				
+    				var enlace = elementosMenu[i].getElementsByTagName("a")[0];
+    				
+    				
+    				if (i == 1)
+    				{
+    					enlace.onclick = function (event) {
+    														event.preventDefault();
+    														document.location.href = this.href;
+    														document.documentElement.scrollTop = 0;	
+    					
+    														}
+    				}
+    				else 
+    				{
+    					enlace.onclick = function (event) {
+    														event.preventDefault();
+    														document.location.href = this.href;
+    														document.documentElement.scrollTop -= alturaMenu+80;	
+    					
+    														}
+    				}	
+    		
+
+    			}
+    			
+    			var icono = elementosMenu[0].getElementsByTagName("a")[0];
+    			
+    			icono.onclick = function() {cerrarMenu();};
+    			
+    			icono.getElementsByTagName("i")[0].className = "fa fa-close";
+        		
+    		} 
+		}
+	
+		function cerrarMenu() {
+	    		var menu = document.getElementById("menu");
+	    		
+	    		if (menu.className == "menuAbierto") {
+	        		menu.className = "";
+	        		
+	        		
+	    	
+	    			var elementosMenu = menu.getElementsByTagName("li");
+	    	
+	    			var i;
+	    			for (i=1; i < elementosMenu.length; i++) 
+	    			{
+	    				elementosMenu[i].onclick = function() {};
+	    			}
+	    			
+	    			
+	    			var icono = elementosMenu[0].getElementsByTagName("a")[0];
+	    			
+	    			icono.onclick = function() {abrirMenu();};
+	    			
+	    			icono.getElementsByTagName("i")[0].className = "fa fa-bars";
+	    		}
+	
+		}
+		
+		
+		</script>
+
+
+
+
+
+	
+	</head>
+	
+	
+	<body onload="inicio();"> 
+	<div id="cabecera">
+	<h1>GENEROS ANIME/MANGA</h1>
+	</div>
+	
+	<div id="menu">
+	<ul>
+	
+	<li>
+		<a href="#" class="iconoMenu" onclick="abrirMenu()">
+    	<i class="fa fa-bars"></i>
+  		</a>
+  	</li>
+	
+	
+	<li><a href="#Shōnen">Shōnen</a>  </li>
+	<li><a href="#Shōjo">Shōjo</a>  </li>
+	<li><a href="#Kodomo">Kodomo</a>  </li>
+	<li><a href="#Gakuen">Gakuen</a>  </li>
+	
+	</ul>
+	</div>
+	
+	<div id="contenido">
+	<div id="Shōnen">
+	<h2><u>Shōnen</u></h2>
+	
+	<p>Son series con grandes dosis de acción,​ a menudo situaciones humorísticas con protagonistas masculinos. El compañerismo entre adolescentes o adultos de un equipo de combate, también suele subrayarse en un shōnen. También suele haber personajes atractivos femeninos. Está destinado principalmente al público masculino joven.</p> 
+	
+	<h3>Shingeki No Kyojin </h3>
+	<p>La historia de Shingeki no Kyojin nos traslada a una época en la que la humanidad ha estado al borde de la extinción debido a la existencia de los titanes. Unos seres gigantes aparentemente sin inteligencia cuyo objetivo no es otro que devorar humanos a pesar de no necesitarlos para sobrevivir. Los pocos supervivientes han levantado tres muros más altos que cualquier titán, donde viven pacíficamente sin el miedo de ser devorados por los gigantes. La humanidad ha vivido tranquila durante más de 100 años hasta que en el año 845 aparece de la nada un titán más alto que los muros construidos para protegerse y crea una brecha en uno de ellos permitiendo que todos los titanes se abran paso hacia el interior. En ese momento, la humanidad recibe el recordatorio de que viven con miedo a ser devorados por los titanes.  </p>
+	<img src="img/attack_on_titans__B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/attack_on_titans__.jpg';"
+	onmouseout="this.src = 'img/attack_on_titans__B.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/XMXgHfHxKVM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Death Note </h3>
+	<p>La historia se centra en Light Yagami, el mejor estudiante de preparatoria de japón encuentra un cuaderno sobrenatural llamado «Death Note», el cual es capaz de matar personas si se escriben los nombres de éstas en él mientras el portador visualiza mentalmente la cara de quien quiere asesinar. Light intenta eliminar a todos los criminales y crear un mundo donde no exista la maldad, pero sus planes serán frustrados por L, un famoso detective privado al cual se comienza una trama tratando de descubrir quien es kira. </p>
+	<img src="img/img_0B.jpg" width="500" height="400" alt=""
+	onmouseover="this.src = 'img/img_0.jpg';"
+	onmouseout="this.src = 'img/img_0B.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/UiaPyUD6M2w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	<h3>Sword Art Online </h3>
+	<p>En el año 2022, el videojuego virtual de rol multijugador masivo en línea (VRMMORPG) Sword Art Online (SAO) es puesto en venta. Con el Nerve Gear, un casco de realidad virtual que estimula los cinco sentidos del usuario a través de su cerebro, los jugadores pueden experimentar y controlar a sus personajes dentro del juego con sus mentes. Pero un acontecimiento inesperado se produce el 06 de Noviembre de 2022 (primer día de inicio del servidor) cuando Akihiko Kayaba, el creador de SAO, impide a los jugadores hacer log out (cerrar sesión). Akihiko les propone un reto, si quieren ser libres y salir del juego, deben llegar al piso 100 de la torre del juego y derrotar al jefe final. Sin embargo, si sus avatares mueren en el juego, también lo harán sus cuerpos en el mundo real. Kirito, que es un "BetaTester", es decir, un jugador experto que probó la versión beta del juego, está decidido a llegar al piso 100 y alcanzar la libertad. Ahora tendrá que pasar cada nivel o cada piso sin morir, con la ayuda de Asuna otra jugadora con quien formará equipo. </p>
+	<img src="img/sword-art-online-1B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/sword-art-online-1.jpg';"
+	onmouseout="this.src = 'img/sword-art-online-1B.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/OsLY7DXWsF4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	</div>
+	
+	
+	<div id="Shōjo">
+	<h2><u>Shōjo</u></h2>
+	
+	<p>Género destinado principalmente al público femenino joven, ya que se tratan temas que llaman la atención del publico femenino, como son temas de amistad, comedia, compañerismo y de romance desde el punto de vista femenino. </p>
+		
+	<h3>Card Captor Sakura </h3>
+	<p>La historia se centra en Sakura Kinomoto, una niña que obtiene unos extraños poderes mágicos después de liberar accidentalmente un conjunto de cartas de un libro. Tras esto, Sakura se ve obligada a recolectar y cuidar las Cartas Clow para evitar una catástrofe en el mundo.  </p>
+	<img src="img/7217028112_da15ccbca5_bB.jpg" width="500" height="400" alt=""
+	onmouseover="this.src = 'img/7217028112_da15ccbca5_b.jpg';"
+	onmouseout="this.src = 'img/7217028112_da15ccbca5_bB.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/q91TXBDgyac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Marmalade Boy </h3>
+	<p>Miki Koishikawa, una estudiante de 15 años, cuyos padres realizan un intercambio de parejas con la familia Matsura, que tiene un hijo de su edad, Yuu. Los padres deciden vivir bajo el mismo techo con sus hijos, y Miki, que se muestra reacia al principio, poco a poco se enamora de su hermanastro. </p>
+	<img src="img/marmalade-boy-maxw-1280B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/marmalade-boy-maxw-1280.jpg';"
+	onmouseout="this.src = 'img/marmalade-boy-maxw-1280B.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/e6oYHRfMJTo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Sailor Moon </h3>
+	<p>Serena Tsukino es una niña de 14 años con una vida común y corriente; un día encuentra repentinamente una gata que habla llamada Luna, ésta le da a Serena un prisma mágico y le revela que ella es la legendaria guerrera de la justicia que estaba buscando, aquella que hace cientos de años defendía su hogar y que ahora deberá retomar su posición y salvar a la Tierra de la malvada Reina Beryl, quien ha regresado y busca conquistarla, lo cual fue impedido en el pasado por el Reino Lunar. Es así como Serena se transforma en Sailor Moon y deberá luchar contra las fuerzas del mal en nombre del amor y la justicia junto a sus 4 amigas Sailor Scouts y Tuxedo Mask. </p>
+	<img src="img/s_moonB.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/s_moon.jpg';"
+	onmouseout="this.src = 'img/s_moonB.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/b8Rvwu8Wykw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	</div>
+	
+	
+	<div id="Kodomo">
+	<h2><u>Kodomo</u></h2>
+	
+	<p>Género destinado al público infantil o preadolescente. Se distingue por la ausencia de fanservice u otros elementos destinados a audiencias más adultas. Las historias están caracterizadas por el uso de temas y conceptos para los niños y la familia. </p> 
+	
+	<h3>Doraemon </h3>
+	<p>Doraemon, un gato azul sin orejas, viene desde el siglo XXII, y en realidad es un gato-robot. Tiene un bolsillo mágico del que puede sacar los más sorprendentes artilugios. Aunque a veces sale mal parado por las travesuras de Nobita, su magia no tiene igual. Pero no está sólo, ya que le acompañan sus amigos. Juntos forman una divertida pandilla. </p>
+	<img src="img/Mundo-DoraemonB.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/Mundo-Doraemon.jpg';"
+	onmouseout="this.src = 'img/Mundo-DoraemonB.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/lkLS5dVd3_4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Pokemon </h3>
+	<p>En Pueblo Paleta, todos los niños y niñas están fascinados por el mundo de los Pokémon, unas criaturas de diferentes formas y colores que cuentan con unos poderes muy especiales. Ash Ketchum es uno de ellos, un niño de 10 años que sueña con llegar a ser el mejor entrenador Pokémon del mundo, por lo que visita al profesor Oak, una autoridad en la materia. El profesor le informa que lo primero que debe hacer es escoger un Pokémon. Ash escoge a Pikachu.  </p>
+	<img src="img/fc158956845d8a992e748270d2192e03B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/fc158956845d8a992e748270d2192e03.jpg';"
+	onmouseout="this.src = 'img/fc158956845d8a992e748270d2192e03B.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/wvy-pO65GhQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Digimon </h3>
+	<p>cuenta una historia centrada en 8 niños de Japón, que son trasportados al Digimundo para salvarlo, llegando a la Isla File. Allí encontrarán tanto a sus compañeros digimons como a sus Digivice (o dispositivos digitales).  </p>
+	<img src="img/402776B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/402776.jpg';"
+	onmouseout="this.src = 'img/402776B.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/UXwunDD5Lm8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	</div>
+	
+	
+	<div id="Gakuen">
+	<h2><u>Gakuen</u></h2>
+	
+	<p> Este genero se desarrolla en el ambiente escolar, todas las relaciones y emociones giran en torno a los estudiantes. </p>
+	
+	<h3>Kakegurui </h3>
+	<p>La famosa academia privada Hyakkaou tiene un sistema de clases sociales. Lo más alto de la escuela es el consejo estudiantil, el cual está controlada por las apuestas. Si ganas podrás entrar al cielo, pero si pierdes, al infierno. En esta academia insana, aquellos que son buenos en las apuestas son la envidia de todos, y aquellos que no lo son, sufren. Un día, una chica se transfiere a esta academia, Una chica llamada Yumeko Jabami… </p>
+	<img src="img/KakeguruiB.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/Kakegurui.jpg';"
+	onmouseout="this.src = 'img/KakeguruiB.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/9WB938n2Rmk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>Kare Kano </h3>
+	<p>La historia trata de una chica llamada Yukino Miyazawa, que desde pequeña quiere ser la mejor en la escuela para que todos la admiren. Pero cuando entra al instituto se topa con una competencia, Sôichirô Arima, quien de inmediato se convierte en el centro de admiración de todos, en especial de las féminas, por su atractivo, gentileza e inteligencia, quedando Yukino relegada al segundo plano, lo que no la deja muy contenta, deseando así derrotarlo para volver a ser la número uno. Pero después de muchas "circunstancias" se da cuenta de que no es precisamente odio lo que siente por él y poco a poco ella va descubriendo su mundo interior y en ese camino también el de Arima.  </p>
+	<img src="img/kare_kano-1920x1200B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/kare_kano-1920x1200.jpg';"
+	onmouseout="this.src = 'img/kare_kano-1920x1200B.jpg';">
+	<iframe width="640" height="480" src="https://www.youtube.com/embed/I9I_LRonpwY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	<h3>School Days </h3>
+	<p>Makoto Itou es un estudiante de secundaria que se ha enamorado de una chica que vió en el tren, su nombre es Kotonoha Katsura. Makoto se sienta en clase al lado de Sekai Saionji, quien se da cuenta de su amor por Kotonoha y decide ayudarle a conquistarla. Sekai consigue unirlos, pero se da cuenta de que a ella también le gustaba Makoto y en la parada del tren, antes de marcharse le besa. La historia trata sobre éste triángulo amoroso y demás historias de los compañeros de clase. </p>
+	<img src="img/285914-aliya06B.jpg" width="600" height="400" alt=""
+	onmouseover="this.src = 'img/285914-aliya06.jpg';"
+	onmouseout="this.src = 'img/285914-aliya06B.jpg';">
+	<iframe width="664" height="374" src="https://www.youtube.com/embed/ucu1ob4pT5c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<br>
+	<br>
+	<br>
+	
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	
+	<div id="contacto">
+	
+	<script>
+		function validar() {
+		
+		
+			var nombre = document.getElementsByName("Nombre")[0].value;
+    
+    		if(nombre.length == 0)
+    		{
+    			alert("Debe rellenar el nombre");
+        		return false;
+    		}
+			if(!(/^[A-Za-zÀ-ÿ\_\-\.\s\xF1\xD1]+$/.test(nombre)))
+    		{
+				alert("El nombre solo puede contener letras, espacios y guiones");
+				return false; 		
+    		}
+	
+	
+	
+	
+	
+			var apellido = document.getElementsByName("Apellidos")[0].value;
+    
+    		if(apellido.length == 0)
+    		{
+    			alert("Debe rellenar el apellido");
+        		return false;
+    		}
+    		if(!(/^[A-Za-zÀ-ÿ\_\-\.\s\xF1\xD1]+$/.test(nombre)))
+    		{
+				alert("El nombre solo puede contener letras, espacios y guiones");
+				return false; 		
+    		}
+    		
+    		
+    		
+    		
+    		
+    		
+    		var email = document.getElementsByName("Email")[0].value;
+    
+    		if(email.length == 0)
+    		{
+    			alert("Debe rellenar el email");
+        		return false;
+    		}
+    		
+    		if(!(/^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(email)))
+    		{
+				alert("Dirección email incorrecta");
+				return false; 		
+    		}
+    		
+    		
+    		
+    		
+    		
+    		
+    		var mensaje = document.getElementsByName("Mensaje")[0].value;
+    
+    		if(mensaje.length == 0)
+    		{
+    			alert("Debe rellenar el mensaje a enviar");
+        		return false;
+    		}
+    		
+    		
+    		
+    		
+    		var genero = document.getElementsByName("genero");
+    
+    		var i;
+    		var correcto = false;
+    		for(i=0; i<genero.length; i++)
+    		{
+    			if(genero[i].checked)
+    			{
+        			correcto = true;
+    			}
+    		}
+    
+    		if (correcto == false)
+    		{
+    			alert("Debe pulsar algún botón de opción");
+    			return false;
+    		}
+    		
+    		
+    		
+    		
+    		
+    		
+    	}
+	
+
+
+
+
+	</script>
+	
+	
+	
+	<form name="formulario"  onsubmit="return validar()">
+	
+	Nombre: <br>	
+	<input type="text" name="Nombre" value="">
+  <br>
+  <br>
+   Apellidos: <br>
+   <input type="text" name="Apellidos" value="">
+  <br>
+  <br>
+  Email: <br>
+  <input type="text" name="Email" value="">
+  <br>
+  <br>
+  Mensaje: <br>
+  <textarea name="Mensaje" rows="10" cols="30">
+  
+  </textarea>
+  <br>
+  <br>
+  <br>
+  
+  
+  Género Favorito:
+  <br>
+  <input type="radio" name="genero" value="">Shōnen <br>
+  <input type="radio" name="genero" value="">Shōjo <br>
+  <input type="radio" name="genero" value="">Kodomo <br>
+  <input type="radio" name="genero" value="">Gakuen <br>
+  
+
+  <br>
+  <br>
+  
+	<input type="submit" value="Envio">	
+	
+	</form>
+	
+	
+	</div>
+
+	<button onclick="subir()" id="boton1" title="Ir hacia arriba">
+			<img src="img/flecha1.png" alt="">
+		</button>
+
+
+
+
+
+	</body>
